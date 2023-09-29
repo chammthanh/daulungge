@@ -147,8 +147,8 @@
 /* Product */
 
 .product__list.flex-container {
-    --columns: 3;
-    --space-horizontal: 22.5px;
+    --columns: 4;
+    --space-horizontal: 15px;
     --space-vertical: calc(var(--space-horizontal) * 2);
 }
 
