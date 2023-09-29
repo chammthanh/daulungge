@@ -44,29 +44,37 @@ function loadCriteria() {
 
 function loadProductIndex() {
     const products = [{
-        name: 'Móc khóa hành lá 1',
+        name: 'Móc khóa hành lá',
         price: '30.000',
         photo: 'assets\/images\/products\/prd-1.png',
     }, {
-        name: 'Móc khóa hành lá 2',
+        name: 'Móc khóa cà chua',
         price: '30.000',
-        photo: 'assets\/images\/products\/prd-1.png',
+        photo: 'assets\/images\/products\/prd-2.png',
     }, {
         name: 'Móc khóa hành lá 3',
         price: '30.000',
-        photo: 'assets\/images\/products\/prd-1.png',
+        photo: 'assets\/images\/products\/prd-3.png',
     }, {
         name: 'Móc khóa hành lá 4',
         price: '30.000',
-        photo: 'assets\/images\/products\/prd-1.png',
+        photo: 'assets\/images\/products\/prd-4.png',
     }, {
         name: 'Móc khóa hành lá 5',
         price: '30.000',
-        photo: 'assets\/images\/products\/prd-1.png',
+        photo: 'assets\/images\/products\/prd-5.png',
     }, {
         name: 'Móc khóa hành lá 6',
         price: '30.000',
-        photo: 'assets\/images\/products\/prd-1.png',
+        photo: 'assets\/images\/products\/prd-6.png',
+    }, {
+        name: 'Móc khóa hành lá 7',
+        price: '30.000',
+        photo: 'assets\/images\/products\/prd-7.png',
+    }, {
+        name: 'Móc khóa hành lá 8',
+        price: '30.000',
+        photo: 'assets\/images\/products\/prd-8.png',
     }];
 
     if ($('.product-featured').length) {
