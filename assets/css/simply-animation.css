@@ -1,0 +1,214 @@
+/* Has Scroll */
+
+.has-scroll {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0px 2px 5px 0px #00000080;
+    animation: menuSlideInDown 0.5s ease-out;
+}
+
+@keyframes menuSlideInDown {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+
+/* Simply Animation */
+
+@keyframes arrowBounceRight {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes spinCircle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+/* Blink */
+
+@-webkit-keyframes blink {
+    0% {
+        -webkit-opacity: 1.0;
+    }
+    50% {
+        -webkit-opacity: 0.0;
+    }
+    100% {
+        -webkit-opacity: 1.0;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        -moz-opacity: 1.0;
+    }
+    50% {
+        -moz-opacity: 0.0;
+    }
+    100% {
+        -moz-opacity: 1.0;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        -ms-opacity: 1.0;
+    }
+    50% {
+        -ms-opacity: 0.0;
+    }
+    100% {
+        -ms-opacity: 1.0;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        -o-opacity: 1.0;
+    }
+    50% {
+        -o-opacity: 0.0;
+    }
+    100% {
+        -o-opacity: 1.0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.blink {
+    -webkit-animation: blink 1s infinite linear;
+    -moz-animation: blink 1s infinite linear;
+    -ms-animation: blink 1s infinite linear;
+    -o-animation: blink 1s infinite linear;
+    animation: blink 1s infinite linear;
+}
+
+
+/* Shake Anim */
+
+@-webkit-keyframes shake-anim {
+    0%,
+    100%,
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg)
+    }
+    10%,
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20%,
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+}
+
+@-moz-keyframes shake-anim {
+    0% {
+        -moz-transform: rotate(0) scale(1) skew(1deg)
+    }
+    10%,
+    30% {
+        -moz-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20%,
+    40% {
+        -moz-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    100%,
+    50% {
+        -moz-transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@-ms-keyframes shake-anim {
+    0%,
+    100%,
+    50% {
+        -ms-transform: rotate(0) scale(1) skew(1deg)
+    }
+    10%,
+    30% {
+        -ms-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20%,
+    40% {
+        -ms-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+}
+
+@-o-keyframes shake-anim {
+    0%,
+    100%,
+    50% {
+        -o-transform: rotate(0) scale(1) skew(1deg)
+    }
+    10%,
+    30% {
+        -o-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20%,
+    40% {
+        -o-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+}
+
+@keyframes shake-anim {
+    0%,
+    100%,
+    50% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10%,
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20%,
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+}
+
+.shake-anim {
+    -webkit-animation: shake-anim 1s infinite ease-in-out;
+    -moz-animation: shake-anim 1s infinite ease-in-out;
+    -ms-animation: shake-anim 1s infinite ease-in-out;
+    -o-animation: shake-anim 1s infinite ease-in-out;
+    animation: shake-anim 1s infinite ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+}
