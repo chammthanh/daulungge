@@ -246,3 +246,23 @@
     font-size: 35px;
     color: #AA9356;
 }
+
+
+/*footer*/
+
+#footer-primary>.wrap-content {
+    padding-bottom: 30px;
+}
+
+.footer__list-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__media {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer__media-name {}

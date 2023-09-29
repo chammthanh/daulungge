@@ -48,32 +48,32 @@ function loadProductIndex() {
         price: '30.000',
         photo: 'assets\/images\/products\/prd-1.png',
     }, {
-        name: 'Móc khóa cà chua',
-        price: '30.000',
+        name: 'Móc khóa núi và hoa',
+        price: '28.000',
         photo: 'assets\/images\/products\/prd-2.png',
     }, {
-        name: 'Móc khóa hành lá 3',
-        price: '30.000',
+        name: 'Móc khóa cà chua',
+        price: '25.000',
         photo: 'assets\/images\/products\/prd-3.png',
     }, {
-        name: 'Móc khóa hành lá 4',
+        name: 'Bạch tuộc',
         price: '30.000',
         photo: 'assets\/images\/products\/prd-4.png',
     }, {
-        name: 'Móc khóa hành lá 5',
-        price: '30.000',
+        name: 'Calcifer',
+        price: '28.000',
         photo: 'assets\/images\/products\/prd-5.png',
     }, {
-        name: 'Móc khóa hành lá 6',
-        price: '30.000',
+        name: 'Mochi donut mini',
+        price: '35.000',
         photo: 'assets\/images\/products\/prd-6.png',
     }, {
-        name: 'Móc khóa hành lá 7',
+        name: 'Mèo ú',
         price: '30.000',
         photo: 'assets\/images\/products\/prd-7.png',
     }, {
-        name: 'Móc khóa hành lá 8',
-        price: '30.000',
+        name: 'Zịt nón bèo',
+        price: '65.000',
         photo: 'assets\/images\/products\/prd-8.png',
     }];
 
