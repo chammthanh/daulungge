@@ -1,10 +1,4 @@
 function loadSlideShow() {
-    const slideshows = [{
-        name: 'Yarn Tiệm Len Handmade Xin chào !',
-        desc: 'Tiệm mình cũng cấp các sản phẩm handmade được làm từ len. Với nhu cầu lựa chọn mẫu ngày một nhiều, vì thế để đáp ứng được trọn vẹn nhất yếu cầu của khách hàng, mình đã lập nên trang này để cung cấp các mẫu cho mọi người lựa chọn. Không chỉ các mẫu có bên dưới mà mình còn nhận các mẫu theo yêu cầu. Lựa mẫu xong, liên hệ với mình qua instagram để đặt hàng nhé!',
-        photo: 'assets\/images\/slideshow\/slide.png'
-    }];
-
     if ($('.slideshow').length) {
         for (let index = 0; index < slideshows.length; index++) {
             var item = slideShowItem(slideshows[index], index);
@@ -15,20 +9,6 @@ function loadSlideShow() {
 }
 
 function loadCriteria() {
-    const criterias = [{
-        name: 'Lựa chọn mẫu',
-        desc: 'Bạn lựa các mẫu mình đã cung cấp sẵn hoặc gửi mẫu mong muốn cho mình',
-        photo: 'assets\/images\/criterias\/criteria-1.png',
-    }, {
-        name: 'Đặt hàng',
-        desc: 'Bạn nhắn trực tiếp cho mình qua instagram và tiktok hoặc một số phương tiện mình đã cung cấp',
-        photo: 'assets\/images\/criterias\/criteria-2.png',
-    }, {
-        name: 'Đơn hàng',
-        desc: 'Vì là hàng handmade nên mình cần thời gian từ 4-7 ngày tùy loại sản phẩm. Sau khi hoàn thành mình sẽ gửi đơn liền nè!',
-        photo: 'assets\/images\/criterias\/criteria-3.png',
-    }];
-
     if ($('.criteria').length) {
         for (let index = 0; index < criterias.length; index++) {
             var item = criteriaItem(criterias[index], index);
@@ -43,40 +23,6 @@ function loadCriteria() {
 }
 
 function loadProductIndex() {
-    const products = [{
-        name: 'Móc khóa hành lá',
-        price: '30.000',
-        photo: 'assets\/images\/products\/prd-1.png',
-    }, {
-        name: 'Móc khóa núi và hoa',
-        price: '28.000',
-        photo: 'assets\/images\/products\/prd-2.png',
-    }, {
-        name: 'Móc khóa cà chua',
-        price: '25.000',
-        photo: 'assets\/images\/products\/prd-3.png',
-    }, {
-        name: 'Bạch tuộc',
-        price: '30.000',
-        photo: 'assets\/images\/products\/prd-4.png',
-    }, {
-        name: 'Calcifer',
-        price: '28.000',
-        photo: 'assets\/images\/products\/prd-5.png',
-    }, {
-        name: 'Mochi donut mini',
-        price: '35.000',
-        photo: 'assets\/images\/products\/prd-6.png',
-    }, {
-        name: 'Mèo ú',
-        price: '30.000',
-        photo: 'assets\/images\/products\/prd-7.png',
-    }, {
-        name: 'Zịt nón bèo',
-        price: '65.000',
-        photo: 'assets\/images\/products\/prd-8.png',
-    }];
-
     if ($('.product-featured').length) {
         for (let index = 0; index < products.length; index++) {
             var item = productItem(products[index], index);
@@ -86,9 +32,52 @@ function loadProductIndex() {
     }
 }
 
+function getInstaURL() {
+    var randomID = getRandomInt(allInstaPostId.length);
+    var base_url = 'https://www.instagram.com/p/',
+        last_url = $('.ig-post blockquote').attr('data-instgrm-permalink'),
+        final_url;
+
+    final_url = base_url + allInstaPostId[randomID] + last_url;
+    $('.ig-post blockquote').attr('data-instgrm-permalink', final_url);
+    $('.ig-post blockquote').find('a').each(function() {
+        $(this).attr('href', final_url);
+    });
+}
+
+function paginationProduct() {
+    var perpage = 8;
+    $('.pagination__list').twbsPagination({
+        totalPages: products.length / perpage,
+        visiblePages: 6,
+        initiateStartPageClick: true,
+        href: false,
+        page: null,
+        pageClass: 'pagination__item',
+        activeClass: 'pagination__item--active',
+        anchorClass: '',
+        // next: 'Next',
+        // prev: 'Prev',
+        onPageClick: function(event, page) {
+            //fetch content and render here
+            $('#page-content').text('Page ' + page + ' content here');
+            if ($('.product-featured').length) {
+                $('.product-featured').find('.product__list').empty();
+                for (let index = (page - 1) * perpage; index < page * perpage; index++) {
+                    var item = productItem(products[index], index);
+
+                    appendItem('.product__list', item);
+                }
+            }
+        }
+    });
+}
+
 // Ready to run
 $(document).ready(function() {
     loadCriteria();
-    loadProductIndex();
+    // loadProductIndex();
     loadSlideShow();
+    getInstaURL();
+    paginationProduct();
 });
