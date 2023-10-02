@@ -73,6 +73,23 @@ function paginationProduct() {
     });
 }
 
+function menuResponsive() {
+    if ($('.hamburger').length) {
+        $button = $('.hamburger');
+        $parent = $button.parents('.navigation');
+        $exit = $('.close-button');
+
+        $button.click(function() {
+            $(this).toggleClass('clicked');
+            $(this).parents($parent).find('nav').toggleClass('show');
+        });
+        $exit.click(function() {
+            $button.removeClass('clicked');
+            $(this).parents($parent).find('nav').removeClass('show');
+        })
+    }
+}
+
 // Ready to run
 $(document).ready(function() {
     loadCriteria();
@@ -80,4 +97,5 @@ $(document).ready(function() {
     loadSlideShow();
     getInstaURL();
     paginationProduct();
+    menuResponsive();
 });

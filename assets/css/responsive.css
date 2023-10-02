@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* Responsive */
+
+@media(max-width:1023px) {
+
+    /* Display None */
+    /* Spacing */
+    [class*='-30'] {
+        --spacing: 15px;
+    }
+
+    [class*='-40'],
+    [class*='-50'],
+    [class*='-60'] {
+        --spacing: 20px;
+    }
+
+    [class*='-70'],
+    [class*='-80'] {
+        --spacing: 25px;
+    }
+
+    /* Navigation */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav__item.--is-logo {
+        display: none;
+    }
+
+    .navigation nav {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        left: 0;
+        transition: all 0.3s ease-out;
+    }
+
+    .navigation nav.show {
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+        right: calc(100vw/3);
+        background: #2a2a2a;
+        padding: 3rem 2rem;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .nav__item a {
+        color: var(--clr-text-white);
+    }
+}
+
+@media (min-width:851px) and (max-width:1023px) {}
+
+@media(max-width:850px) {
+
+    /* General */
+    .section__header {
+        margin-bottom: 1rem;
+    }
+
+    /* Product */
+    .product__list.flex-container {
+        --columns: 2;
+        --space-horizontal: 10px;
+    }
+
+    /* Slideshow */
+    .slideshow--left {
+        width: 100%;
+    }
+
+    .slideshow--right {
+        display: none;
+    }
+
+    /* IG Post */
+    .ig-post__info {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {}
+
+@media(max-width:576px) {
+
+    /* Product */
+    .product__list.flex-container {
+        --columns: 1;
+        --space-horizontal: 0px;
+        --space-vertical: 1.25rem;
+    }
+
+    /* Navigation */
+    .navigation nav.show {
+        right: 0;
+    }
+
+    /* Criteria */
+    .criteria .separate {
+        display: none;
+    }
+
+    .criteria__item {
+        width: 100%;
+    }
+
+    .criteria__photo {
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width:369px) {}

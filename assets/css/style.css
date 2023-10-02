@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
     --font-f-black: 'Montserrat-Black';
     --font-f-bold: 'Montserrat-Bold';
@@ -54,13 +56,88 @@
 }
 
 .index-separator {
-    width: 1148px;
+    width: 100%;
     background: url(../images/separate.png) center / contain no-repeat;
     margin: 2rem auto;
 }
 
 
+/* Hamburger */
+
+.hamburger {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hamburger:before,
+.hamburger:after,
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: var(--clr-web-light-french-beige);
+    transition: all 0.3s ease-out;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+}
+
+.hamburger:before {
+    top: 0;
+}
+
+.hamburger:after {
+    top: calc(100% - 3px);
+}
+
+.hamburger span {
+    width: 75%;
+}
+
+.hamburger.clicked:before,
+.hamburger.clicked:after {
+    top: calc(50% - 3px/2);
+    bottom: unset;
+}
+
+.hamburger.clicked:before {
+    transform: rotateZ(45deg);
+}
+
+.hamburger.clicked:after {
+    transform: rotateZ(-45deg);
+}
+
+.hamburger.clicked span {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50px);
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 24px;
+    color: var(--clr-text-white);
+    background: transparent;
+}
+
+
 /* Navigator */
+
+.navigation nav {
+    position: relative;
+}
 
 .nav__list {
     display: flex;
@@ -72,7 +149,7 @@
 }
 
 .nav__item a {
-    font-family: var(--font-fml-medium);
+    font-family: var(--font-f-medium);
     font-size: 21px;
     color: var(--clr-text-primary);
 }
@@ -123,8 +200,12 @@
 
 /* Criteria */
 
+.criteria__list {
+    row-gap: 1.25rem;
+}
+
 .criteria__item {
-    width: 280px;
+    width: 25%;
 }
 
 .criteria__photo {
@@ -363,7 +444,9 @@ h1 {
 
 .footer__list-media {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 0.375rem 0.625rem;
 }
 
 .footer__media {
