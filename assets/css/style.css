@@ -62,10 +62,18 @@
 }
 
 
+/* Header */
+
+.header {
+    display: none;
+}
+
+
 /* Hamburger */
 
 .hamburger {
     position: fixed;
+    top: 1.25rem;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -124,6 +132,7 @@
 }
 
 .close-button {
+    display: none;
     position: absolute;
     top: 1rem;
     right: 1.5rem;

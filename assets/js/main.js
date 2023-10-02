@@ -1,3 +1,11 @@
+function lazyLoad() {
+    if ($(".lazy").length) {
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".lazy",
+        });
+    };
+}
+
 function loadSlideShow() {
     if ($('.slideshow').length) {
         for (let index = 0; index < slideshows.length; index++) {
@@ -69,6 +77,7 @@ function paginationProduct() {
                     appendItem('.product__list', item);
                 }
             }
+            lazyLoad();
         }
     });
 }

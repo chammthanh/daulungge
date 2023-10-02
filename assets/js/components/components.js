@@ -5,7 +5,7 @@ function productItem(product, index) {
     item += '<div class="product__item-inner">';
     item += '<div class="product__photo">';
     item += '<figure class="product__photo-inner hvr-flash-shape">';
-    item += '<img src="' + product.photo + '" alt="' + product.name + '">';
+    item += '<img class="lazy" data-src="' + product.photo + '" alt="' + product.name + '">';
     item += '<figcaption class="figcaption-hidden">' + product.name + '</figcaption>';
     item += '</figure>';
     item += '</div>';
