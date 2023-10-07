@@ -34,7 +34,7 @@ var products = [{
     photo: 'assets\/images\/products\/prd-3.png',
 }, {
     name: 'Bạch tuộc',
-    price: '30.000',
+    price: '28.000',
     photo: 'assets\/images\/products\/prd-4.png',
 }, {
     name: 'Calcifer',
@@ -50,38 +50,78 @@ var products = [{
     photo: 'assets\/images\/products\/prd-7.png',
 }, {
     name: 'Zịt nón bèo',
-    price: '65.000',
+    price: '55.000',
     photo: 'assets\/images\/products\/prd-8.png',
 }, {
-    name: 'Móc khóa hành lá 2',
-    price: '30.000',
-    photo: 'assets\/images\/products\/prd-1.png',
+    name: 'Đầu Doll nón thỏ đen',
+    price: '80.000',
+    photo: 'assets\/images\/products\/prd-9.png',
 }, {
-    name: 'Móc khóa núi và hoa 2',
-    price: '28.000',
-    photo: 'assets\/images\/products\/prd-2.png',
+    name: 'Zịt tỉu thơ',
+    price: '50.000',
+    photo: 'assets\/images\/products\/prd-10.png',
 }, {
-    name: 'Móc khóa cà chua 2',
-    price: '25.000',
-    photo: 'assets\/images\/products\/prd-3.png',
+    name: 'Đồ ăn',
+    price: '45.000',
+    photo: 'assets\/images\/products\/prd-11.png',
 }, {
-    name: 'Bạch tuộc 2',
-    price: '30.000',
-    photo: 'assets\/images\/products\/prd-4.png',
+    name: 'Độ Mixi',
+    price: '60.000',
+    photo: 'assets\/images\/products\/prd-12.png',
 }, {
-    name: 'Calcifer 2',
-    price: '28.000',
-    photo: 'assets\/images\/products\/prd-5.png',
+    name: 'Stitch',
+    price: '65.000',
+    photo: 'assets\/images\/products\/prd-13.png',
 }, {
-    name: 'Mochi donut mini 2',
+    name: 'Đầu heo hồng',
+    price: '40.000',
+    photo: 'assets\/images\/products\/prd-14.png',
+}, {
+    name: 'Mèo tách trà',
+    price: '50.000',
+    photo: 'assets\/images\/products\/prd-15.png',
+}, {
+    name: 'Mochi bánh ú',
+    price: '60.000',
+    photo: 'assets\/images\/products\/prd-16.png',
+}, {
+    name: 'Ong',
+    price: '45.000',
+    photo: 'assets\/images\/products\/prd-17.png',
+}, {
+    name: 'Gà mập',
+    price: '55.000',
+    photo: 'assets\/images\/products\/prd-18.png',
+}, {
+    name: 'Bồ hóng',
+    price: '45.000',
+    photo: 'assets\/images\/products\/prd-19.png',
+}, {
+    name: 'Bò sữa',
+    price: '45.000',
+    photo: 'assets\/images\/products\/prd-20.png',
+}, {
+    name: 'Cừu (trắng & đen)',
+    price: '65.000',
+    photo: 'assets\/images\/products\/prd-21.png',
+}, {
+    name: 'Minions',
+    price: '40.000',
+    photo: 'assets\/images\/products\/prd-22.png',
+}, {
+    name: 'Thỏ cài hoa hoa',
+    price: '40.000',
+    photo: 'assets\/images\/products\/prd-23.png',
+}, {
+    name: 'Susuwatari',
     price: '35.000',
-    photo: 'assets\/images\/products\/prd-6.png',
+    photo: 'assets\/images\/products\/prd-24.png',
 }, {
-    name: 'Mèo ú 2',
-    price: '30.000',
-    photo: 'assets\/images\/products\/prd-7.png',
+    name: 'Heo đi học',
+    price: '50.000',
+    photo: 'assets\/images\/products\/prd-25.png',
 }, {
-    name: 'Zịt nón bèo 2',
-    price: '65.000',
-    photo: 'assets\/images\/products\/prd-8.png',
+    name: 'capybara bồn tắm',
+    price: '55.000',
+    photo: 'assets\/images\/products\/prd-26.png',
 }];
