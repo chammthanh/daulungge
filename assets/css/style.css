@@ -469,7 +469,7 @@ h1 {
 .warning__item::before {
     content: '';
     position: absolute;
-    background: url(/assets/images/icon-yarn.png)no-repeat;
+    background: url(assets/images/icon-yarn.png)no-repeat;
     width: 28px;
     height: 28px;
     left: -40px;
