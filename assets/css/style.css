@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 :root {
     --font-f-black: 'Montserrat-Black';
     --font-f-bold: 'Montserrat-Bold';
@@ -65,7 +64,7 @@
 /* Header */
 
 .header {
-    display: none;
+    /* display: none; */
 }
 
 
@@ -445,11 +444,47 @@ h1 {
 }
 
 
+/*details-info*/
+
+.details-info {
+    background-color: rgb(201 179 121 / 30%);
+}
+
+.details-info__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.warning__list {
+    width: 50%;
+}
+
+.warning__item {
+    position: relative;
+    padding-left: 0;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.warning__item::before {
+    content: '';
+    position: absolute;
+    background: url(/assets/images/icon-yarn.png)no-repeat;
+    width: 28px;
+    height: 28px;
+    left: -40px;
+    top: 0;
+}
+
+.qr-code {
+    display: flex;
+    gap: 20px;
+}
+
+
 /*footer*/
 
-#footer-primary>.wrap-content {
-    padding-bottom: 30px;
-}
+#footer-primary>.wrap-content {}
 
 .footer__list-media {
     display: flex;

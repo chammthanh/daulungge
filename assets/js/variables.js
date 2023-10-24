@@ -21,107 +21,107 @@ var criterias = [{
 }];
 
 var products = [{
-    name: 'Móc khóa hành lá',
-    price: '30.000',
-    photo: 'assets\/images\/products\/prd-1.png',
-}, {
-    name: 'Móc khóa núi và hoa',
-    price: '28.000',
-    photo: 'assets\/images\/products\/prd-2.png',
-}, {
-    name: 'Móc khóa cà chua',
-    price: '25.000',
-    photo: 'assets\/images\/products\/prd-3.png',
-}, {
-    name: 'Bạch tuộc',
-    price: '28.000',
-    photo: 'assets\/images\/products\/prd-4.png',
-}, {
-    name: 'Calcifer',
-    price: '28.000',
-    photo: 'assets\/images\/products\/prd-5.png',
-}, {
-    name: 'Mochi donut mini',
-    price: '35.000',
-    photo: 'assets\/images\/products\/prd-6.png',
-}, {
-    name: 'Mèo ú',
-    price: '30.000',
-    photo: 'assets\/images\/products\/prd-7.png',
-}, {
-    name: 'Zịt nón bèo',
-    price: '55.000',
-    photo: 'assets\/images\/products\/prd-8.png',
-}, {
-    name: 'Đầu Doll nón thỏ đen',
+    name: 'Doll nón thỏ đen',
     price: '80.000',
-    photo: 'assets\/images\/products\/prd-9.png',
+    photo: 'assets\/images\/products\/doll-non-tho-den-80.png',
 }, {
-    name: 'Zịt tỉu thơ',
-    price: '50.000',
-    photo: 'assets\/images\/products\/prd-10.png',
-}, {
-    name: 'Đồ ăn',
-    price: '45.000',
-    photo: 'assets\/images\/products\/prd-11.png',
-}, {
-    name: 'Độ Mixi',
-    price: '60.000',
-    photo: 'assets\/images\/products\/prd-12.png',
-}, {
-    name: 'Stitch',
+    name: 'Logo Độ Mixi',
     price: '65.000',
-    photo: 'assets\/images\/products\/prd-13.png',
-}, {
-    name: 'Đầu heo hồng',
-    price: '40.000',
-    photo: 'assets\/images\/products\/prd-14.png',
-}, {
-    name: 'Mèo tách trà',
-    price: '50.000',
-    photo: 'assets\/images\/products\/prd-15.png',
-}, {
-    name: 'Mochi bánh ú',
-    price: '60.000',
-    photo: 'assets\/images\/products\/prd-16.png',
-}, {
-    name: 'Ong',
-    price: '45.000',
-    photo: 'assets\/images\/products\/prd-17.png',
+    photo: 'assets\/images\/products\/do-mixi-65.png',
 }, {
     name: 'Gà mập',
     price: '55.000',
-    photo: 'assets\/images\/products\/prd-18.png',
+    photo: 'assets\/images\/products\/ga-map-55.png',
+}, {
+    name: 'Hành lá',
+    price: '30.000',
+    photo: 'assets\/images\/products\/hanh-la-30.png',
+}, {
+    name: 'Mochi donut',
+    price: '35.000',
+    photo: 'assets\/images\/products\/mochi-donut-35.png',
+}, {
+    name: 'Mèo ú',
+    price: '35.000',
+    photo: 'assets\/images\/products\/meo-u-35.png',
+}, {
+    name: 'Núi & hoa',
+    price: '28.000',
+    photo: 'assets\/images\/products\/nui-hoa-28.png',
+}, {
+    name: 'Stitch',
+    price: '65.000',
+    photo: 'assets\/images\/products\/stitch-65.png',
+}, {
+    name: 'Vịt tỉu thơ',
+    price: '50.000',
+    photo: 'assets\/images\/products\/vit-tiu-tho-50.png',
+}, {
+    name: 'Vịt nón bèo',
+    price: '55.000',
+    photo: 'assets\/images\/products\/vit-non-beo-55.png',
+}, {
+    name: 'Vịt nâm xôi',
+    price: '60.000',
+    photo: 'assets\/images\/products\/vit-mam-xoi-60.png',
+}, {
+    name: 'Tulip',
+    price: '30.000',
+    photo: 'assets\/images\/products\/tulip-30.png',
+}, {
+    name: 'Bạch tuộc tròn',
+    price: '40.000',
+    photo: 'assets\/images\/products\/bach-tuoc-tron-40.png',
 }, {
     name: 'Bồ hóng',
     price: '45.000',
-    photo: 'assets\/images\/products\/prd-19.png',
+    photo: 'assets\/images\/products\/bo-hong45.png',
+}, {
+    name: 'Bánh kem cuộn',
+    price: '28.000',
+    photo: 'assets\/images\/products\/banh-kem-cuon-28.png',
+}, {
+    name: 'Calcifer',
+    price: '28.000',
+    photo: 'assets\/images\/products\/calcifer-28.png',
+}, {
+    name: 'Cà chua',
+    price: '30.000',
+    photo: 'assets\/images\/products\/ca-chua-30.png',
 }, {
     name: 'Bò sữa',
-    price: '45.000',
-    photo: 'assets\/images\/products\/prd-20.png',
+    price: '50.000',
+    photo: 'assets\/images\/products\/bo-sua50.png',
 }, {
-    name: 'Cừu (trắng & đen)',
-    price: '65.000',
-    photo: 'assets\/images\/products\/prd-21.png',
+    name: 'Chó shiba',
+    price: '50.000',
+    photo: 'assets\/images\/products\/cho-shiba-50.png',
+}, {
+    name: 'Con sứa',
+    price: '55.000',
+    photo: 'assets\/images\/products\/con-sua-55.png',
+}, {
+    name: 'Đầu loopy',
+    price: '50.000',
+    photo: 'assets\/images\/products\/dau-loopy-50.png',
+}, {
+    name: 'Mochi bánh giò',
+    price: '60.000',
+    photo: 'assets\/images\/products\/mochi-banh-gio-60.png',
+}, {
+    name: 'Ong vàng',
+    price: '45.000',
+    photo: 'assets\/images\/products\/ong-45.png',
+}, {
+    name: 'Đầu heo hồng',
+    price: '40.000',
+    photo: 'assets\/images\/products\/dau-heo-hong-40.png',
 }, {
     name: 'Minions',
-    price: '40.000',
-    photo: 'assets\/images\/products\/prd-22.png',
+    price: '45.000',
+    photo: 'assets\/images\/products\/minions-45.png',
 }, {
-    name: 'Thỏ cài hoa hoa',
-    price: '40.000',
-    photo: 'assets\/images\/products\/prd-23.png',
-}, {
-    name: 'Susuwatari',
-    price: '35.000',
-    photo: 'assets\/images\/products\/prd-24.png',
-}, {
-    name: 'Heo đi học',
+    name: 'Đồ ăn',
     price: '50.000',
-    photo: 'assets\/images\/products\/prd-25.png',
-}, {
-    name: 'capybara bồn tắm',
-    price: '55.000',
-    photo: 'assets\/images\/products\/prd-26.png',
+    photo: 'assets\/images\/products\/do-an-50.png',
 }];
