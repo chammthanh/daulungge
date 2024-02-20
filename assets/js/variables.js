@@ -28,6 +28,11 @@ var products = [{
         name: 'Doll nón thỏ đen',
         price: '85.000',
         photo: 'assets\/images\/products\/doll-non-tho-den-80.png',
+    },
+    {
+        name: 'Vịt mini đội nón (còn nhiều mẫu nón)',
+        price: '50.000',
+        photo: 'assets\/images\/products\/vit-mini-50.png',
     }, {
         name: 'Logo Độ Mixi',
         price: '65.000',
