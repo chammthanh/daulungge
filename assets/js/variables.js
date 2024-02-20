@@ -90,10 +90,6 @@ var products = [{
         price: '60.000',
         photo: 'assets\/images\/products\/Toothlesss-60.jpg',
     }, {
-        name: 'Vịt đội nón mini',
-        price: '45.000',
-        photo: 'assets\/images\/products\/vit-mini-45.png',
-    }, {
         name: 'Heo nón hoa',
         price: '55.000',
         photo: 'assets\/images\/products\/prd-25.png',
